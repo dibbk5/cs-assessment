@@ -1,0 +1,18 @@
+2. doublerAppend took 18.77 ms while doublerInsert took 938.71 m. Append was much faster
+
+3. 
+
+                    doublerInsert      doublerAppend
+tinyArray           261.937 us          174.086 us
+smallArray          64.796 us           12.118 us
+mediumArray         164.273 us          163.035 us
+largyArray          8.679 ms            889.987 us
+extraLargeArray     938.172 ms          4.708 ms
+
+4. As the size of the number getting passed in gets larger the the time of both gets longer. However, the doublerAppend funciton
+    scales better since there are fewer steps in the .push method then there are in the .unshift method. We can tell that .push
+    scales better because as the size of the number being passed in gets larger the speed does not change as much as the .unshift method.
+
+5.  The unshift method inserts the value into the beginning of the array. It does this by shifting the items in the array up in index then
+    inserting the value into index 0. 
+
